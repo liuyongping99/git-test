@@ -3,6 +3,7 @@ This is a test project for learning.
 
 https://help.github.com/articles/basic-writing-and-formatting-syntax/
 
+入门指南
 https://guides.github.com/activities/hello-world/
 
 ## 一些 GitHub 的基本概念
