@@ -9,6 +9,10 @@ https://guides.github.com/activities/hello-world/
 ## 一些 GitHub 的基本概念
 ### Repository
 仓库的意思，即你的项目，你想在 GitHub 上开源一个项目，那就必须要新建一个 Repository ，如果你开源的项目多了，你就拥有了多个 Repositories 。
+新建的仓库缺省分支为"master"
+
+### Branch
+远程仓库的缺省分支为"master", 也可以创建多个远程分支
 
 ## Issue
 问题的意思，举个例子，就是你开源了一个项目，别人发现你的项目中有bug，或者哪些地方做的不够好，他就可以给你提个 Issue ，即问题，提的问题多了，也就是 Issues ，然后你看到了这些问题就可以去逐个修复，修复ok了就可以一个个的 Close 掉。
