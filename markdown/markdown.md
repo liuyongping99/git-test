@@ -10,4 +10,10 @@ markdown语法
 只需要在基础语法的括号中填入图片的位置路径即可，支持绝对路径和相对路径。
 例如：
 
-![avatar](https://github.com/liuyongping99/git-test/blob/master/images/1.png?raw=true)
+![avatar](/home/picture/1.png)
+
+# 插入网络图片
+比如： 
+!(https://github.com/youyou-579/123/blob/master/2.8.jpg?raw=true)
+
+
