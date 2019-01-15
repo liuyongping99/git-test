@@ -1,2 +1,2 @@
-* 现在远程创建库
-* git clone git@github.com:michaelliao/gitskills.git
+* 首先在远程创建库
+* 然后在本地git clone git@github.com:michaelliao/gitskills.git
