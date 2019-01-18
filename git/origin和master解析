@@ -1,0 +1,14 @@
+# 3个大的步骤
+先要明确一点，对git的操作是围绕3个大的步骤来展开的（其实几乎所有的SCM都是这样）
+
+## 从git取数据（git clone）
+
+## 改动代码
+
+## 将改动传回git（git push）
+
+这3个步骤又涉及到两个repository，一个是remote repository，再远程服务器上，一个是local repository，再自己工作区上。其中
+
+1, 3两个步骤涉及到remote server/remote repository/remote branch，
+
+2涉及到local repository/local branch。git clone 会根据你指定的remote server/repository/branch，拷贝一个副本到你本地，再git push之前，你对所有文件的改动都是在你自己本地的local repository来做的，你的改动(local branch)和remote branch是独立（并行）的。Gitk显示的就是local repository。
