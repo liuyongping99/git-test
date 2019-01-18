@@ -1,3 +1,5 @@
+# 远端创建，本地克隆
+
 * 首先在远程创建库
 * 然后在本地git clone git@github.com:michaelliao/gitskills.git
   拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改
