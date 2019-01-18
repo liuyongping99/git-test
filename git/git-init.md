@@ -3,7 +3,7 @@
   是一个空的仓库（empty Git repository）
 * 创建一个readme.txt文件
   *记得把Notepad++的默认编码设置为UTF-8 without BOM即可*
-* git add readme.txt 保存到工作区
+* git add readme.txt 保存到工作区（暂存区）
 * git status
 * git commit -m "This is my first commit via Git!"
   提交到本地仓库
