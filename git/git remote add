@@ -5,7 +5,7 @@
 ## 可以为本地仓库添加指向多个远程仓库的关联
 git remote add upstream https://github.com/user1/repository.git
 
-## 用意？
+## 一个本地仓库关联多个远程仓库的用意？
 git remote -v
 origin https://github.com/user2/repository.git (fetch)
 origin https://github.com/user2/repository.git (push)
