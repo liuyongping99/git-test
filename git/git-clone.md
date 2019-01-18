@@ -2,8 +2,9 @@
 
 * 首先在远程创建库
 * 然后在本地git clone git@github.com:<username>/<projectname>.git  
-  git clone git@github.com:michaelliao/gitskills.git
+  git clone git@github.com:michaelliao/gitskills.git  
   git clone操作是 拷贝一个 Git 仓库到本地，让自己能够查看该项目，或者进行修改
+  
 * git branch --all
   clone之后，默认是本地master分支和远程的origin/master分支关联起来
   远程也可能有多个分支
