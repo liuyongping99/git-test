@@ -10,6 +10,8 @@
 * git pull 拉取所有代码
 * git checkout -b feature 创建新的开发分支，新的本地分支
   git checkout -b 本地分支名 远程分支名
+  使用-t参数，它默认会在本地建立一个和远程分支名字一样的分支
+  git checkout -b 远程分支名
 * git commit -m "some message" 在feature分支上提交
 * git checkout master，然后更新git pull
 
