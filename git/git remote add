@@ -4,3 +4,11 @@
 
 ## 可以为本地仓库添加指向多个远程仓库的关联
 git remote add upstream https://github.com/user1/repository.git
+
+## 用意？
+git remote -v
+origin https://github.com/user2/repository.git (fetch)
+origin https://github.com/user2/repository.git (push)
+upstream https://github.com/user1/repository.git (push)
+upstream https://github.com/user1/repository.git (push)
+同一个本地仓库关联到不同的远程的库，这样可以同时检出到不同的本地分支，做版本比较合并
