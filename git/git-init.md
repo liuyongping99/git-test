@@ -12,10 +12,10 @@
 * git branch
   查看当前有哪些分支
 * git checkout -b feature
-  创建一个名为feature的分支
+  创建一个名为feature的本地分支
 * origin，是默认的远程版本库名称，远程仓库的默认标签，代表一个远程仓库地址
   一个origin, 可以有多个分支，默认主分支为master
-* git remote add origin git@github.com:liuyongping99/learngit.git  
+* git remote add origin git@github.com:liuyongping99/learngit.git 
   将本地仓库关联到远程仓库
 * git fetch origin
   拉取远程所有信息
