@@ -1,0 +1,6 @@
+## origin, 默认的远程仓库名
+
+## origin/master, 默认的远程分支
+
+## 可以为本地仓库添加指向多个远程仓库的关联
+git remote add upstream https://github.com/user1/repository.git
