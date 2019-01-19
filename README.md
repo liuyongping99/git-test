@@ -35,4 +35,4 @@ https://guides.github.com/activities/hello-world/
 #### title4
 ##### title5
 
-![avatar](https://github.com/youyou-579/123/blob/master/2.8.jpg?raw=true)
+![SKILLS](https://github.com/liuyongping99/git-test/blob/master/images/programmerskills.png?raw=true)
