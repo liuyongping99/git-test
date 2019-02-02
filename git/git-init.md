@@ -13,6 +13,7 @@
   查看当前有哪些分支
 * git checkout -b feature
   创建一个名为feature的本地分支
+* 在GitHub上创建远程库，--注意最好不要自动生成README文件--
 * origin，是默认的远程版本库名称，远程仓库的默认标签，代表一个远程仓库地址
   一个origin, 可以有多个分支，默认主分支为master
 * git remote add origin git@github.com:liuyongping99/learngit.git 
