@@ -35,7 +35,13 @@ GIT每次提交保存的是文件快照，而不是文件备份
 - 所谓分支（branch）就是指向某个快照的指针，分支名就是指针名。哈希值是无法记忆的，分支使得用户可以为快照起别名。而且，分支会自动更新，如果当前分支有新的快照，指针就会自动指向它。比如，master 分支就是有一个叫做 master 指针，它指向的快照就是 master 分支的当前快照。
 - Git 有一个特殊指针HEAD， 总是指向当前分支的最近一次快照。另外，Git 还提供简写方式，HEAD^指向 HEAD的前一个快照（父节点），HEAD~6则是HEAD之前的第6个快照。
 - 每一个分支指针都是一个文本文件，保存在.git/refs/heads/目录，该文件的内容就是它所指向的快照的二进制对象名（哈希值）。
-
+~~~
+refs/
+refs目录存储都是引用文件，如本地分支，远端分支，标签等
+refs/heads/xxx 本地分支
+refs/remotes/origin/xxx 远端分支
+refs/tags/xxx 本地tag
+~~~
 请参考[Git 原理入门](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
 
 
