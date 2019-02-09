@@ -14,12 +14,14 @@
 ## GIT快照原理
 ![structure](https://github.com/liuyongping99/git-test/blob/master/images/git-structure.jpg?raw=true)
 
-## 文件快照
-GIT每次提交保存的是文件快照，而不是文件备份
+## 文件系统层面对文件进行快照组织
 ![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
-
-- Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
 - 文件快照，记录时块结构信息?
+
+## 提交时的文件快照
+GIT每次提交保存的是文件快照，而不是文件备份
+- 对单个文件进行SHA1计算，提交记录中保存的是相关文件的SHA1值
+- Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
 - 为提高性能，若文件没有变化，在COMMIT提交时Git 不会再次保存，而只对上次保存的快照作一链接。
 ![commit-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/git-snapshot.png?raw=true)
 
