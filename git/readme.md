@@ -1,5 +1,7 @@
 # GIT
 
+![maincommands](https://github.com/liuyongping99/git-test/blob/master/images/maincommands.png?raw=true)
+
 ## 工作区
 - 工作区：工作区就是除开.git目录的其他东西。通过操作系统的文件索引来管理的内容。就是我们正常使用电脑的时候所看到，能编辑的内容。
 
