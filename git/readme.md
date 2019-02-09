@@ -15,7 +15,10 @@
 ![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
 - 文件快照，记录时块结构信息?
 
-## GIT提交时的快照
+## GIT快照
+- 所谓快照，就是保存当前的目录结构，以及每个文件对应的二进制对象。上一个操作，目录结构已经保存好了，现在需要将这个目录结构与一些元数据一起写入版本历史。
+
+## GIT提交时是快照
 GIT每次提交保存的是文件快照，而不是文件备份
 - 对单个文件进行SHA1计算，提交记录中保存的是相关文件的SHA1值
 - Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
