@@ -11,11 +11,11 @@
 - 工作区和本地提交的内容都在.git目录下？
 - git仓库：就是用来存放备份文件的地方，但是备份文件存入仓库的时候会压缩， 这些压缩的备份文件存放在.git/objects目录中，直接打开是乱码，而且为了节省空间，仓库不会存放重复的文件，只有新增和修改过的文件才会存入 git仓库，删除的时候并不会从仓库移除文件，不然我们怎么恢复呢。
 
-## 文件系统层面对文件进行快照组织
+## 操作系统文件系统层面对单个文件进行快照组织
 ![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
 - 文件快照，记录时块结构信息?
 
-## 提交时的文件快照
+## GIT提交时的快照
 GIT每次提交保存的是文件快照，而不是文件备份
 - 对单个文件进行SHA1计算，提交记录中保存的是相关文件的SHA1值
 - Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
@@ -24,6 +24,8 @@ GIT每次提交保存的是文件快照，而不是文件备份
 
 ## GIT快照原理
 ![structure](https://github.com/liuyongping99/git-test/blob/master/images/git-structure.jpg?raw=true)
+- 文件的实际压缩存储和提交信息分离
+
 
 
 
