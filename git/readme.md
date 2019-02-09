@@ -46,6 +46,13 @@ refs/tags/xxx 本地tag
 ~~~
 请参考[Git 原理入门](http://www.ruanyifeng.com/blog/2018/10/git-internals.html)
 
+## SHA1
+- Git把它所管理的所有对象（blob，tree，commit，tag……），全部根据它们的内容生成SHA1哈希串值作为对象名
+- blob文件内容
+
+
+
+
 
 
 
