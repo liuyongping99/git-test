@@ -5,6 +5,9 @@
 - 工作去和本地提交的内容都在.git目录下？
 
 ## 文件快照
-GIT保存的是文件快照，而不是文件备份
+GIT每次提交保存的是文件快照，而不是文件备份
 文件快照，记录时块结构信息?
+![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
+
+
 
