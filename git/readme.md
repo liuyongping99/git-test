@@ -6,8 +6,9 @@
 
 ## 文件快照
 GIT每次提交保存的是文件快照，而不是文件备份
-文件快照，记录时块结构信息?
 ![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
+文件快照，记录时块结构信息?
+
 
 
 
