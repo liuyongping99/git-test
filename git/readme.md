@@ -18,8 +18,8 @@
 GIT每次提交保存的是文件快照，而不是文件备份
 ![file-snapshot](https://github.com/liuyongping99/git-test/blob/master/images/fileblock-snap.png?raw=true)
 
-文件快照，记录时块结构信息?
-
+- Every time you commit, or save the state of your project in Git, it basically takes a picture of what all your files look like at that moment and stores a reference to that snapshot.
+- 文件快照，记录时块结构信息?
 - 为提高性能，若文件没有变化，在COMMIT提交时Git 不会再次保存，而只对上次保存的快照作一链接。
 
 
