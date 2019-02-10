@@ -43,6 +43,7 @@ git push -u origin master
  - `push -u origin master` 将本地仓库代码推送至远程仓库，实际开发中 该指令后需要输入github 账号以及密码。（首次提交注意别遗漏`-u`指定默认主机）
 
 以上指令正常执行后， 本地仓库的代码就提交到远程仓库了：
+![push-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-push-readme.jpg?raw=true)
 
 **原理图如下：**
 
