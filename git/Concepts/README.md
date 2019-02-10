@@ -162,6 +162,7 @@ git stash pop
 然后， git 自动合并冲突失败， 冲突的代码就很清晰的展现在我们面前了：
 ![stash-pull-pop](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-stash-pull-pop.jpg?raw=true)
 ![FIX-conlicts](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/fix-conflicts.jpg?raw=true)
+
 小广告：3.2栏更多细节请移步本人另一博文git 代码冲突处理）
 
 手工解决冲突：
@@ -178,5 +179,18 @@ git commit -am '终于解决冲突啦！'
 git push origin master
 ~~~
 于是本地有冲突的代码就提交成功啦！
+![conflict-pushed](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/coniflict-push.jpg?raw=true)
+
+
+**后记：**
+以上很多git指令适合在无图形化界面的linux中使用（例如：阿里云服务器操作git）， 实际开发中当然是用图形化界面解决!
+![edit-in-gui](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/gui-edit.jpg?raw=true)
+
+解决冲突之覆盖本地代码对应的是： 工程目录下tortoiseGit(git 小乌龟) “Revert” ：
+![svn-revert](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/svn-revert.jpg?raw=true)
+
+解决冲突之解决冲突后提交本地修改对应的是： 手工合并冲突代码后，工程目录下tortoiseGit(git 小乌龟) “resolve” ：
+![svn-resolve](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/svn-resolve.jpg?raw=true)
+
 
 
