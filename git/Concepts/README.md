@@ -140,6 +140,8 @@ git pull
 将本地修改的代码放在缓存区， 然后从远程仓库拉取最新代码，拉取成功后再从缓存区将修改的代码取出， 这样最新代码跟本地修改的代码就会混杂在一起， 手工解决冲突后， 提交解决冲突后的代码。
 
 原理图：
+![stash-pull](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-stash-pull.jpg?raw=true)
+![stashpop-commit](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-stashpop-commit.jpg?raw=true)
 
 对应到我们实际项目中， 进入 copyTestGit/testGit 执行指令`git pull`出现 (重回到上述冲突场景)
 
@@ -149,4 +151,17 @@ error: Your local changes to the following files would be overwritten by merge:
 Please, commit your changes or stash them before you can merge.
 Aborting
 ~~~
+将本地修改放入缓存区(成功后本地工作区间的代码跟本地仓库代码会同步)， 具体指令：
+~~~
+git stash 
+~~~
+然后， 取出本地修改的代码， 具体指令:
+~~~
+git stash pop
+~~~
+然后， git 自动合并冲突失败， 冲突的代码就很清晰的展现在我们面前了：
+
+小广告：3.2栏更多细节请移步本人另一博文git 代码冲突处理）
+
+手工解决冲突：
 
