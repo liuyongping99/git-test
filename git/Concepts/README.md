@@ -36,12 +36,11 @@ git push -u origin master
 ~~~
 
 **指令解释：**
-`git init ` 表示在当前的项目目录中生成本地的git管理；
-`git add README.md` 将“README.md”文件保存至缓存区，实际开发中一般使用 `git add -A`，使用-A:将新增、删除、修改的文件改动全保存至缓存区；
-`git commit -m "first commit"` 将代码从缓存区保存至本地仓库，实际开发中一般使用`git commit -am "说明的文字"`，使用 -a：如果没文件更改操作（增、删、改名）就可以省略git add指令；
-`git remote add origin https://github.com/wteam-xq/testGit.git`将本地仓库与指定的远程仓库创建 联系；
-`push -u origin master` 将本地仓库代码推送至远程仓库，实际开发中 该指令后需要输入github 账号以及密码。（首次提交注意别遗漏`-u`指定默认主机）
-
+ - `git init ` 表示在当前的项目目录中生成本地的git管理；
+ - `git add README.md` 将“README.md”文件保存至缓存区，实际开发中一般使用 `git add -A`，使用-A:将新增、删除、修改的文件改动全保存至缓存区；
+ - `git commit -m "first commit"` 将代码从缓存区保存至本地仓库，实际开发中一般使用`git commit -am "说明的文字"`，使用 -a：如果没文件更改操作（增、删、改名）就可以省略git add指令；
+ - `git remote add origin https://github.com/wteam-xq/testGit.git`将本地仓库与指定的远程仓库创建 联系；
+ - `push -u origin master` 将本地仓库代码推送至远程仓库，实际开发中 该指令后需要输入github 账号以及密码。（首次提交注意别遗漏`-u`指定默认主机）
 以上指令正常执行后， 本地仓库的代码就提交到远程仓库了：
 
 原理图如下：
