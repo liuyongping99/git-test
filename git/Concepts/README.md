@@ -5,7 +5,7 @@
 
 **目录**
  - 1. [提交代码到远程仓库](#way1)
- - 2. [将远程仓库代码更新到本地]（#way2）
+ - 2. [将远程仓库代码更新到本地](#way2)
  - 3. [更新到本地仓库时， 出现冲突，解决冲突](#way3)
  - [ 后记：](#way4)
 
@@ -21,8 +21,9 @@ git跟传统的代码管理器（如:svn）不同， 主要区别在于git多了
 
 接下来， 我们以三个实际操作的例子讲解git的日常，代码如何在上述4个区域流动。
 
+<span id="way1"></span>
 ### 1.提交代码到远程仓库
-<span id="way1"></span>首先在本地工作区间创建一个新工程：testGit，然后在项目里新建一个README.md， 工作区间的工程如下：
+首先在本地工作区间创建一个新工程：testGit，然后在项目里新建一个README.md， 工作区间的工程如下：
 ![create-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/create-readme.md.jpg?raw=true)
 
 远程仓库创建一新工程，具体操作参见 如何在window上把你的项目提交到github
@@ -50,8 +51,9 @@ git push -u origin master
 **原理图如下：**
 ![add-commit-push](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-commit-push.jpg?raw=true)
 
+<span id="way2"></span>
 ### 2.将远程仓库代码更新到本地
-<span id="way2"></span>首先我们新建一文件夹：copyTestGit，进入该文件夹后使用git 指令：
+首先我们新建一文件夹：copyTestGit，进入该文件夹后使用git 指令：
 ~~~
 git clone https://github.com/wteam-xq/testGit
 ~~~
@@ -96,8 +98,9 @@ git pull
 **以上指令区别的原理图：**
 ![fetchandpull](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-pullandfetch.jpg?raw=true)
 
+<span id="way3"></span>
 ### 3.更新到本地仓库时， 出现冲突，解决冲突
-<span id="way3"></span>首先， 我们先重现下出现冲突的情况； 在testGit目录下先修改README.md文件第三行，hello word 修正为 hello world：
+首先， 我们先重现下出现冲突的情况； 在testGit目录下先修改README.md文件第三行，hello word 修正为 hello world：
 ![edit-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/edit-readme.md.jpg?raw=true)
 提交该修改到远程仓库（提交细节参照前述步骤）：
 ![push-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-push-readme.jpg?raw=true)
@@ -184,8 +187,9 @@ git push origin master
 ![conflict-pushed](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/coniflict-push.jpg?raw=true)
 
 
+<span id="way4"></span>
 **后记：**
-<span id="way4"></span>以上很多git指令适合在无图形化界面的linux中使用（例如：阿里云服务器操作git）， 实际开发中当然是用图形化界面解决!
+以上很多git指令适合在无图形化界面的linux中使用（例如：阿里云服务器操作git）， 实际开发中当然是用图形化界面解决!
 ![edit-in-gui](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/gui-edit.jpg?raw=true)
 
 解决冲突之覆盖本地代码对应的是： 工程目录下tortoiseGit(git 小乌龟) “Revert” ：
