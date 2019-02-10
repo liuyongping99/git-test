@@ -72,7 +72,7 @@ git push origin master
 ~~~
 
 原理图如下：
-
+![commit-am-push](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-commit-am.jpg?raw=true)
 
 远程仓库代码更新后， 我们进入另一本地仓库：copyTestGit\testGit，将远程仓库的代码更新至该本地仓库。
 
@@ -91,8 +91,8 @@ git pull
 
 （注意: 本文注重git工作原理图不考虑多分支情况，且使用了git clone所以副本工程已经跟主分支建立了追踪关系，所以'pull' 'fetch' 后都不接分支代码 ）
 
-以上指令区别的原理图：
-
+**以上指令区别的原理图：**
+![fetchandpull](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-pullandfetch.jpg?raw=true)
 
 ### 3.更新到本地仓库时， 出现冲突，解决冲突
 首先， 我们先重现下出现冲突的情况； 在testGit目录下先修改README.md文件第三行，hello word 修正为 hello world：
