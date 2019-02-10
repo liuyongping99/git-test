@@ -160,8 +160,23 @@ git stash
 git stash pop
 ~~~
 然后， git 自动合并冲突失败， 冲突的代码就很清晰的展现在我们面前了：
-
+![stash-pull-pop](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-stash-pull-pop.jpg?raw=true)
+![FIX-conlicts](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/fix-conflicts.jpg?raw=true)
 小广告：3.2栏更多细节请移步本人另一博文git 代码冲突处理）
 
 手工解决冲突：
+![conflicts-fixed](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/conflict-fixed.jpg?raw=true)
+
+告诉git， 这个文件（README.md）的冲突 已经解决:
+~~~
+git add README.md
+~~~
+
+提交代码（细节参考前述流程）：
+~~~
+git commit -am '终于解决冲突啦！'
+git push origin master
+~~~
+于是本地有冲突的代码就提交成功啦！
+
 
