@@ -50,9 +50,11 @@ git push -u origin master
 
 ### 2.将远程仓库代码更新到本地
 首先我们新建一文件夹：copyTestGit，进入该文件夹后使用git 指令：
-
+~~~
 git clone https://github.com/wteam-xq/testGit
+~~~
 指令执行完毕后， 就在该文件夹下生成一份副本啦（相当于多人协作时另一台设备上的工程文件），原理图如下：
+![git-clone](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-clone.jpg?raw=true)
 
 接下来， 讨论`git pull`、 `git fetch` 、 `git merge`的关系
 
