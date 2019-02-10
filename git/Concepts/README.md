@@ -27,10 +27,13 @@ git跟传统的代码管理器（如:svn）不同， 主要区别在于git多了
 
 接下来， 我们以三个实际操作的例子讲解git的日常，代码如何在上述4个区域流动。
 
-### 1.提交 代码到远程仓库
+### 1.提交代码到远程仓库
+
 首先在本地工作区间创建一个新工程：testGit，然后在项目里新建一个README.md， 工作区间的工程如下：
+![create-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/create-readme.md.jpg?raw=true)
 
 远程仓库创建一新工程，具体操作参见 如何在window上把你的项目提交到github
+![create-remoteprjongithub](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/create-remoteprjongithub.jpg?raw=true)
 
 将该新建的工程提交至远程仓库，关键的git 指令如下：
 ~~~
