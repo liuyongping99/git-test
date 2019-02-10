@@ -96,22 +96,21 @@ git pull
 
 ### 3.更新到本地仓库时， 出现冲突，解决冲突
 首先， 我们先重现下出现冲突的情况； 在testGit目录下先修改README.md文件第三行，hello word 修正为 hello world：
-
+![edit-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/edit-readme.md.jpg?raw=true)
 提交该修改到远程仓库（提交细节参照前述步骤）：
-
+![push-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-push-readme.jpg?raw=true)
 
 然后， 在副本工程copyTestGit/testGit 目录下也修改README.md文件第三行，hello word 修正为 hello world2：
 ~~~
 git pull
 ~~~
 指令执行之后会发现以下冲突提示：
-
+![readme-conflict](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/readme-conflict.jpg?raw=true)
 出现以上提示， 说明本次更新代码失败；主要在于本地工作区间跟远程仓库的新代码冲突了， 图解如下：
-
+![pull-conflict](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-pull-conflict.jpg?raw=true)
 接下来，有两种方式处理冲突: 放弃本地修改或 解决冲突后提交本地修改
 
-3.1 放弃本地修改
-
+#### 3.1 放弃本地修改
 放弃本地修改意味着将远程仓库的代码完全覆盖本地仓库以及本地工作区间， 如果对git的指令不熟悉那大可以将本地工程完全删除，然后再重新拷贝一次（`git clone`）。
 
 当然， git如此强大没必要用这么原始的方法，可以让本地仓库代码覆盖本地修改，然后更新远程仓库代码； 
@@ -124,12 +123,11 @@ git checkout head .
 (注意： 别遗漏 "head" 后的 " ." )
 
 然后更新远程仓库的代码就不会出现冲突了:
-
 ~~~
 git pull
 ~~~
-原理图如下：
-
+**原理图如下：**
+![checkout-pull](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-checkout-pull.jpg?raw=true)
 
 #### 3.2 解决冲突后提交本地修改
 
