@@ -46,6 +46,7 @@ git push -u origin master
 ![push-readme](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-push-readme.jpg?raw=true)
 
 **原理图如下：**
+![add-commit-push](https://github.com/liuyongping99/git-test/blob/master/git/Concepts/images/git-commit-push.jpg?raw=true)
 
 ### 2.将远程仓库代码更新到本地
 首先我们新建一文件夹：copyTestGit，进入该文件夹后使用git 指令：
